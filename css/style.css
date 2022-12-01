@@ -113,7 +113,7 @@ nav {
     letter-spacing: 0.02em;
 }
 
-.header-list .header-item+.header-item {
+.header-item+.header-item {
     margin-left: 50px;
 }
 
@@ -194,7 +194,6 @@ nav {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    /*display: flex;*/
 
     text-align: center;
     letter-spacing: 0.06em;
@@ -203,7 +202,6 @@ nav {
     color: #fff;
     border-radius: 4px;
     border: none;
-    /*cursor: pointer;*/
 
     padding: 10px 32px;
     min-width: 216px;
@@ -216,10 +214,6 @@ nav {
 }
 
 /*-----------------  Priorities  -------------------*/
-
-.priorities-container {
-    outline: 1px solid tomato;
-}
 
 .priorities-list {
     display: flex;
@@ -252,10 +246,6 @@ nav {
 
 /*---------------------  EXAMPLE  -------------------*/
 
-.example-container {
-    outline: 1px solid green;
-}
-
 .example-title {
     font-family: inherit;
     font-weight: 700;
@@ -282,10 +272,6 @@ nav {
     background-color: #F5F4FA;
 }
 
-.team-container {
-    outline: 1px solid red;
-}
-
 .team-list {
     display: flex;
     margin-top: 50px;
@@ -300,7 +286,6 @@ nav {
     flex-basis: calc(100% / 4 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    width: 270px;
 }
 
 .team-title {
@@ -373,7 +358,6 @@ nav {
 .footer-address {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -393,7 +377,6 @@ nav {
 .footer-tel {
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -406,17 +389,21 @@ nav {
     color: #2196F3;
 }
 
-/*.footer-mail,
-.footer-tel {
-    color: inherit;
-    }*/
-
 
 /*--------------PORTFOLIO----------------*/
 
+.button-list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.button-item+.button-item {
+    margin-left: 8px;
+} 
+
 .nav-button {
     font-family: inherit;
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -428,7 +415,8 @@ nav {
     background: #F5F4FA;
     border-radius: 4px;
     border: none;
-    /*cursor: pointer;*/
+    padding: 6px 22px;
+
 }
 
 .nav-button:hover,
@@ -437,24 +425,45 @@ nav {
     color: #fff;
 }
 
+.project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+}
+
+.project-item {
+    max-width: 370px;
+    height: auto;
+    
+}
+
+.item-project {
+    flex-direction: column;
+    align-items: normal;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    padding: 20px 24px;
+}
+
+
 .project-title {
     font-family: inherit;
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
-
     letter-spacing: 0.06em;
 
     color: var(--basic-text-color);
+
+    margin-bottom: 4px;
 }
 
 .project-text {
     font-family: inherit;
-    /*font-style: normal;*/
-    /*font-weight: 400;*/
     font-size: 16px;
     line-height: 1.88x;
-
     letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
